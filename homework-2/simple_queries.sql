@@ -7,9 +7,10 @@ SELECT order_id, abs(order_date - shipped_date) as days_diff
 FROM orders;
 
 -- 3. все города без повторов, в которых зарегистрированы заказчики (customers)
-
+SELECT DISTINCT city FROM customers;
 
 -- 4. количество заказов (таблица orders)
-
+SELECT DISTINCT city FROM customers;
 
 -- 5. количество стран, в которые отгружался товар (таблица orders, колонка ship_country)
+SELECT COUNT(DISTINCT ship_country) FROM orders;
